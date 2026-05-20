@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+httpx
+selenium
+webdriver-manager
+whisper
+sounddevice
+scipy
+numpy
+opencv-contrib-python
+librosa
+pyttsx3
+pycaw
+comtypes
+pythoncom

@@ -1,0 +1,228 @@
+.dashboard-panel {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 18px 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.messages-container {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.message-row {
+  display: flex;
+  flex-direction: column;
+  max-width: 72%;
+}
+
+.message-row.user {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.message-row.orion,
+.message-row.system {
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+.message-bubble {
+  padding: 16px 20px;
+  border-radius: 18px;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.message-bubble.user {
+  background: rgba(120, 0, 255, 0.18);
+  border: 1px solid rgba(180, 100, 255, 0.24);
+  color: #ffffff;
+}
+
+.message-bubble.orion {
+  background: rgba(0, 240, 255, 0.12);
+  border: 1px solid rgba(0, 240, 255, 0.24);
+  color: #ffffff;
+}
+
+.message-bubble.system {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(200, 220, 255, 0.18);
+  color: rgba(255, 255, 255, 0.82);
+  font-style: italic;
+}
+
+.message-label {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.command-bar-wrapper {
+  margin-top: 18px;
+}
+
+.command-bar.compact {
+  min-height: 74px;
+  border-radius: 28px;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  background: rgba(8, 16, 35, 0.88);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+}
+
+.icon-btn,
+.chat-toggle-btn,
+.send-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.icon-btn.mic-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  font-size: 1.2rem;
+  transition: 0.2s ease;
+}
+
+.icon-btn.mic-btn:hover,
+.icon-btn.mic-btn.active {
+  background: rgba(0, 240, 255, 0.18);
+  box-shadow: 0 0 16px rgba(0, 240, 255, 0.12);
+}
+
+.chat-toggle-btn {
+  height: 46px;
+  padding: 0 18px;
+  border-radius: 14px;
+  background: rgba(120, 0, 255, 0.16);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.chat-toggle-btn:hover,
+.chat-toggle-btn.active {
+  background: rgba(120, 0, 255, 0.26);
+}
+
+.chat-input-form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.command-input {
+  flex: 1;
+  height: 48px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 240, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: white;
+  padding: 0 16px;
+  font-size: 0.98rem;
+  outline: none;
+}
+
+.command-input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.command-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.send-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(0, 240, 255, 0.14);
+  color: white;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+.send-btn:hover:not(:disabled) {
+  background: rgba(0, 240, 255, 0.22);
+}
+
+.send-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.voice-mode-text {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.96rem;
+}
+
+body.light-theme .message-bubble.user {
+  background: rgba(120, 0, 255, 0.1);
+  color: #111827;
+}
+
+body.light-theme .message-bubble.orion {
+  background: rgba(0, 120, 255, 0.08);
+  color: #111827;
+}
+
+body.light-theme .message-bubble.system {
+  background: rgba(0, 0, 0, 0.03);
+  color: #374151;
+}
+
+body.light-theme .message-label {
+  color: rgba(17, 24, 39, 0.6);
+}
+
+body.light-theme .command-bar.compact {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(0, 120, 255, 0.16);
+}
+
+body.light-theme .icon-btn.mic-btn,
+body.light-theme .chat-toggle-btn,
+body.light-theme .send-btn {
+  color: #111827;
+}
+
+body.light-theme .icon-btn.mic-btn {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme .chat-toggle-btn {
+  background: rgba(120, 0, 255, 0.1);
+}
+
+body.light-theme .command-input {
+  background: rgba(0, 0, 0, 0.03);
+  color: #111827;
+}
+
+body.light-theme .command-input::placeholder {
+  color: rgba(17, 24, 39, 0.45);
+}
+
+body.light-theme .voice-mode-text {
+  color: rgba(17, 24, 39, 0.6);
+}

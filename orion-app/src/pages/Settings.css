@@ -1,0 +1,103 @@
+.settings-container {
+    padding: 32px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.settings-title {
+    margin-bottom: 32px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.settings-card {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.settings-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings-label h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    color: var(--text-primary);
+}
+
+.settings-label p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.settings-action {
+    display: flex;
+    gap: 12px;
+}
+
+.settings-divider {
+    height: 1px;
+    background: rgba(139, 155, 180, 0.1);
+    width: 100%;
+}
+
+.toggle-btn {
+    background: transparent;
+    border: 1px solid var(--neon-blue);
+    color: var(--neon-blue);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.toggle-btn.active {
+    background: rgba(0, 240, 255, 0.15);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.primary-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.primary-btn.warning {
+    background: rgba(255, 60, 60, 0.2);
+    color: #ff6b6b;
+    border: 1px solid rgba(255, 60, 60, 0.5);
+}
+
+.primary-btn.warning:hover {
+    background: rgba(255, 60, 60, 0.4);
+    box-shadow: 0 0 12px rgba(255, 60, 60, 0.4);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body.light-theme .settings-divider {
+    background: rgba(85, 102, 119, 0.1);
+}
+
+body.light-theme .toggle-btn.active {
+    background: rgba(0, 119, 255, 0.15);
+    box-shadow: 0 0 10px rgba(0, 119, 255, 0.2);
+}

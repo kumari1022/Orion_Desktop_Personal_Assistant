@@ -1,0 +1,43 @@
+Folder PATH listing for volume Acer
+Volume serial number is 40B6-85E6
+C:.
+¦   index.html
+¦   package.json
+¦   structure.txt
+¦   vite.config.js
+¦   
++---electron
+¦       main.cjs
+¦       preload.cjs
+¦       
++---public
+¦       vite.svg
+¦       
++---src
+    ¦   App.css
+    ¦   App.jsx
+    ¦   main.jsx
+    ¦   
+    +---assets
+    ¦       react.svg
+    ¦       
+    +---components
+    ¦       AuthPanel.css
+    ¦       AuthPanel.jsx
+    ¦       CommandInput.css
+    ¦       CommandInput.jsx
+    ¦       Dashboard.css
+    ¦       Dashboard.jsx
+    ¦       Header.css
+    ¦       Header.jsx
+    ¦       Sidebar.css
+    ¦       Sidebar.jsx
+    ¦       
+    +---pages
+    ¦       Settings.css
+    ¦       Settings.jsx
+    ¦       
+    +---services
+    +---styles
+            global.css
+            

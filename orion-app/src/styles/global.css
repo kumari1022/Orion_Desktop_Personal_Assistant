@@ -1,0 +1,82 @@
+:root {
+    --bg-color: #0B0F1A;
+    --panel-bg: rgba(20, 25, 45, 0.6);
+    --neon-blue: #00F0FF;
+    --neon-purple: #B026FF;
+    --text-primary: #FFFFFF;
+    --text-secondary: #8B9BB4;
+    --border-color: rgba(0, 240, 255, 0.2);
+    --glow-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+body.light-theme {
+    --bg-color: #FFFFFF;
+    --panel-bg: rgba(240, 245, 255, 0.6);
+    --neon-blue: #0077FF;
+    --neon-purple: #8A2BE2;
+    --text-primary: #111111;
+    --text-secondary: #556677;
+    --border-color: rgba(0, 119, 255, 0.2);
+    --glow-shadow: 0 0 10px rgba(0, 119, 255, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+    background: var(--panel-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.glow-text-blue {
+    text-shadow: 0 0 8px var(--neon-blue);
+    color: var(--neon-blue);
+}
+
+.glow-text-purple {
+    text-shadow: 0 0 8px var(--neon-purple);
+    color: var(--neon-purple);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(139, 155, 180, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--neon-blue);
+}

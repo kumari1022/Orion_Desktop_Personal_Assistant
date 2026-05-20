@@ -1,0 +1,8 @@
+node_modules/
+.venv/
+dist/
+build/
+__pycache__/
+*.pyc
+.env
+orion_chrome_profile/

@@ -1,0 +1,51 @@
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-image:
+        radial-gradient(circle at 15% 50%, rgba(0, 240, 255, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 85% 30%, rgba(176, 38, 255, 0.03) 0%, transparent 50%);
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.content-area {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background: radial-gradient(circle at center, rgba(20, 25, 45, 0.3) 0%, transparent 70%);
+}
+
+.dashboard-layout {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
+.dashboard-divider {
+    width: 1px;
+    height: 90%;
+    align-self: center;
+    background: linear-gradient(to bottom, transparent, rgba(139, 155, 180, 0.2), transparent);
+    margin: 0 10px;
+}
+
+body.light-theme .app-layout {
+    background-image:
+        radial-gradient(circle at 15% 50%, rgba(0, 119, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 85% 30%, rgba(138, 43, 226, 0.05) 0%, transparent 50%);
+}
+
+body.light-theme .content-area {
+    background: radial-gradient(circle at center, rgba(240, 245, 255, 0.8) 0%, transparent 70%);
+}
+
+body.light-theme .dashboard-divider {
+    background: linear-gradient(to bottom, transparent, rgba(85, 102, 119, 0.2), transparent);
+}
