@@ -245,18 +245,5 @@ Try speaking or typing the following commands to test ORION's capabilities:
 * **⏰ Smart Reminders:** Background threads monitoring times and triggering desktop notifications for custom tasks.
 * **🌐 Multi-language Support:** Offline translation models allowing speech recognition and output in multiple regional languages.
 
----
 
-## 👥 Contributors
-
-* **John Doe** - Lead Full Stack Developer & AI Integrations - [@github_username](https://github.com/github_username)
-* **Jane Smith** - Computer Vision & Biometrics Specialist - [@github_username](https://github.com/github_username)
-
-*Feel free to submit a pull request or open an issue to contribute to the ORION project!*
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 =======
